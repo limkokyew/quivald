@@ -1,0 +1,133 @@
+@font-face {
+    src: url("fonts/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+    src: url("fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+    src: url("fonts/TitilliumWeb-Regular.ttf");
+}
+
+.body {
+    -fx-background-color: white;
+}
+
+#dashboard-title {
+    -fx-font-family: "Montserrat";
+    -fx-font-size: 28px;
+    -fx-fill: #303030;
+}
+
+.menu-item {
+    -fx-font-family: "Titillium Web";
+    -fx-padding: 8px 50px 8px 8px;
+    -fx-font-size: 16px;
+}
+
+.menu-item:hover {
+    -fx-cursor: HAND;
+}
+
+.menu-item:hover, .menu-item:focused {
+    -fx-background-color: #404978;
+    -fx-text-fill: white;
+}
+
+.table-view {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-table-cell-border-color: transparent;
+}
+
+.table-view .column-header .arrow {
+    -fx-background-color: white;
+}
+
+.formatted-table {
+   -fx-background-color: transparent;
+   -fx-background-insets: 0;
+}
+
+.formatted-table .column-header-background {
+    -fx-background-color: #404978;
+    -fx-font-size: 14px;
+    -fx-border-width: 0;
+}
+
+.table-view:focused,
+.table-view .column-header,
+.table-view .filler,
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background .label {
+    -fx-background-color: #404978;
+    -fx-border-color: #404978;
+    -fx-font-family: "Titillium Web SemiBold";
+    -fx-font-size: 16px;
+    -fx-text-fill: white;
+}
+
+.table-cell .text {
+    -fx-fill: #303030;
+}
+
+.table-row-cell, .table-row-cell:odd {
+    -fx-background-color: transparent;
+    -fx-font-family: "Titillium Web";
+    -fx-cell-size: 32px;
+    -fx-font-size: 14px;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #404978;
+    -fx-border-color: transparent;
+    -fx-background-insets: 0;
+    -fx-table-cell-border-color: transparent;
+}
+
+.table-row-cell:selected .text {
+    -fx-fill: white;
+}
+
+.table-left-alignment,
+.table-view .column-header.table-left-alignment .label {
+    -fx-alignment: CENTER-LEFT;
+    -fx-padding: 0 0 0 5px;
+}
+
+.table-center-alignment,
+.table-view .column-header.table-center-alignment .label {
+    -fx-alignment: CENTER;
+}
+
+.table-right-alignment,
+.table-view .column-header.table-right-alignment .label {
+    -fx-alignment: CENTER-RIGHT;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical {
+    -fx-background-color: white;
+    -fx-font-size: 14px;
+    -fx-padding: 1px;
+}
+
+.scroll-bar:horizontal:hover .thumb, .scroll-bar:vertical:hover .thumb {
+    -fx-background-color: #888888;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #aaaaaa;
+    -fx-background-radius: 0;
+}

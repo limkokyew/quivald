@@ -1,0 +1,9 @@
+#sidebar {
+    -fx-background-color: #303030;
+}
+
+#popup-close-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-graphic: url("../icons/popup_close.png");
+}

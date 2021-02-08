@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane stylesheets="@main_window.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane fx:id="mainWindow" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="600.0" minWidth="1000.0">
+         <left>
+            <AnchorPane id="sidebar" fx:id="sidebar" maxHeight="1.7976931348623157E308" maxWidth="300.0" minHeight="550.0" minWidth="300.0" BorderPane.alignment="CENTER" />
+         </left>
+      </BorderPane>
+   </children>
+</StackPane>

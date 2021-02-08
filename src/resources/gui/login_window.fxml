@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="body" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="425.0" style="-fx-background-color: white;" stylesheets="@login_window.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.app.gui.controller.LoginController">
+   <children>
+      <ImageView fitHeight="333.0" fitWidth="612.0" layoutX="-83.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/graphics/login_window_picture.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="TOP_CENTER" layoutX="76.0" layoutY="356.0" prefWidth="260.0" spacing="20.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" spacing="15.0">
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/login_username_input.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="usernameInput" pickOnBounds="false" prefHeight="33.0" prefWidth="200.0" promptText="Benutzername">
+                     <styleClass>
+                        <String fx:value="login-input-textfield" />
+                        <String fx:value="titillium-web" />
+                     </styleClass>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="15.0">
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/login_password_input.png" />
+                     </image>
+                  </ImageView>
+                  <PasswordField fx:id="passwordInput" pickOnBounds="false" prefHeight="33.0" prefWidth="200.0" promptText="Passwort">
+                     <styleClass>
+                        <String fx:value="login-input-textfield" />
+                        <String fx:value="titillium-web" />
+                     </styleClass>
+                  </PasswordField>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button id="login-button" fx:id="loginButton" layoutX="127.0" layoutY="484.0" mnemonicParsing="false" pickOnBounds="false" prefWidth="193.0" text="LOGIN">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow color="#333333" />
+         </effect>
+      </Button>
+      <AnchorPane layoutX="114.0" layoutY="47.0" prefHeight="240.0" prefWidth="200.0" style="-fx-background-color: #39416b; -fx-background-radius: 50px;">
+         <children>
+            <ImageView fitHeight="189.0" fitWidth="184.0" layoutX="10.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button id="password-reset-button" fx:id="passwordResetButton" layoutX="152.0" layoutY="553.0" mnemonicParsing="false" pickOnBounds="false" prefWidth="122.0" text="Passwort vergessen">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="toggle-register-button" fx:id="toggleRegisterButton" layoutX="115.0" layoutY="577.0" mnemonicParsing="false" pickOnBounds="false" prefHeight="25.0" prefWidth="200.0" text="Noch kein Benutzer? Registrieren">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
