@@ -1,25 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="550.0" minWidth="700.0" styleClass="body" stylesheets="@dashboard_window.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.app.gui.controller.DashboardController">
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="550.0" minWidth="700.0" prefHeight="772.0" prefWidth="1140.0" styleClass="body" stylesheets="@dashboard_window.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.app.gui.controller.DashboardController">
    <children>
-      <Text id="dashboard-title" layoutX="34.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard" />
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="34.0" AnchorPane.rightAnchor="54.0" AnchorPane.topAnchor="75.0">
+      <Text id="dashboard-title" layoutX="34.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard" AnchorPane.bottomAnchor="464.7480010986328" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="480.9800109863281" AnchorPane.topAnchor="40.0" />
+      <AnchorPane layoutX="50.0" layoutY="108.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 5px;" AnchorPane.bottomAnchor="72.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="180.0">
          <children>
-            <TableView fx:id="dashboardTable" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="formatted-table" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <TableView fx:id="dashboardTable" layoutX="23.0" layoutY="36.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="formatted-table" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="-1.0">
               <columns>
-                <TableColumn fx:id="nameCol" maxWidth="1.7976931348623157E308" minWidth="150.0" prefWidth="-1.0" styleClass="table-left-alignment" text="Name" />
-                <TableColumn fx:id="usernameCol" maxWidth="1.7976931348623157E308" minWidth="120.0" prefWidth="-1.0" styleClass="table-left-alignment" text="Benutzername" />
-                <TableColumn fx:id="passwordCol" maxWidth="1.7976931348623157E308" minWidth="100.0" prefWidth="-1.0" styleClass="table-left-alignment" text="Passwort" />
-                <TableColumn fx:id="websiteCol" maxWidth="1.7976931348623157E308" minWidth="120.0" prefWidth="-1.0" styleClass="table-left-alignment" text="Webseite" />
-                <TableColumn maxWidth="1.7976931348623157E308" minWidth="120.0" prefWidth="-1.0" styleClass="table-left-alignment" text="Anmerkungen" />
+                  <TableColumn prefWidth="60.0" />
+                <TableColumn fx:id="nameCol" maxWidth="1.7976931348623157E308" minWidth="120.0" prefWidth="160.0" styleClass="table-left-alignment" text="Name" />
+                <TableColumn fx:id="usernameCol" maxWidth="1.7976931348623157E308" minWidth="120.0" prefWidth="220.0" styleClass="table-left-alignment" text="Benutzername" />
+                <TableColumn fx:id="passwordCol" maxWidth="1.7976931348623157E308" minWidth="100.0" prefWidth="160.0" styleClass="table-left-alignment" text="Passwort" />
+                <TableColumn fx:id="websiteCol" maxWidth="1.7976931348623157E308" minWidth="120.0" prefWidth="220.0" styleClass="table-left-alignment" text="Webseite" />
+                <TableColumn maxWidth="1.7976931348623157E308" minWidth="120.0" prefWidth="200.0" styleClass="table-left-alignment" text="Kategorien" />
               </columns>
             </TableView>
          </children>
+         <effect>
+            <DropShadow color="#d0d0d0" height="90.0" offsetY="6.0" radius="44.5" width="90.0" />
+         </effect>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
       </AnchorPane>
+      <TextField layoutX="50.0" layoutY="109.0" prefWidth="300.0" promptText="Suchbegriff eingeben" styleClass="input-textfield" AnchorPane.leftAnchor="690.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="40.0" />
+      <Button ellipsisString="" layoutX="1032.0" layoutY="40.0" maxHeight="37.0" maxWidth="58.0" minHeight="37.0" minWidth="58.0" mnemonicParsing="false" styleClass="search-button" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="40.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
    </children>
 </AnchorPane>

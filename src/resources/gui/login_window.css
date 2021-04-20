@@ -51,6 +51,7 @@
     -fx-border-radius: 5px;
     -fx-font-size: 14px;
     -fx-padding: 10px 15px 10px 15px;
+    -fx-text-fill: #353350;
 }
 
 .login-input-textfield.empty {

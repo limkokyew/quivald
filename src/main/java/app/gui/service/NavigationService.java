@@ -65,7 +65,7 @@ public class NavigationService {
     public void createMasterStage(FXMLFiles initialFxmlFile, FXMLFiles initialSidebarFile) {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(FXMLFiles.MASTER.getPath()));
         loader.setController(injector.getInstance(MasterControllerFactoryImpl.class)
-              .create(loadFxml(FXMLFiles.NAVIGATION_BAR)));
+              .create());
 
         Stage masterStage = createStage(String.format("Dashboard - %s", APP_TITLE), true);
         masterStage.getIcons().add(new Image(getClass().getResource("/icons/logo_stage.png").toExternalForm()));

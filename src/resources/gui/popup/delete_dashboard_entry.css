@@ -1,18 +1,14 @@
 @font-face {
-    src: url("../fonts/Montserrat-SemiBold.ttf");
+    src: url("../fonts/SourceSansPro-Regular.ttf");
 }
 
 @font-face {
-    src: url("../fonts/TitilliumWeb-Regular.ttf");
-}
-
-@font-face {
-    src: url("../fonts/TitilliumWeb-SemiBold.ttf");
+    src: url("../fonts/SourceSansPro-SemiBold.ttf");
 }
 
 #title {
-    -fx-font-family: "Montserrat SemiBold";
-    -fx-font-size: 16px;
+    -fx-font-family: "Source Sans Pro SemiBold";
+    -fx-font-size: 24px;
 }
 
 .button {
@@ -20,18 +16,23 @@
     -fx-cursor: HAND;
     -fx-font-size: 14px;
     -fx-pref-height: 30px;
-    -fx-pref-width: 100px;
-    -fx-border-color: #404978;
-    -fx-border-radius: 2px;
+    -fx-pref-width: 105px;
+    -fx-border-color: #DD3D3E;
+    -fx-border-radius: 5px;
+    -fx-font-family: "Source Sans Pro SemiBold";
 }
 
-.button:hover {
-    -fx-background-color: #404978;
-    -fx-text-fill: white;
+.selectable-label {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-font-family: "Source Sans Pro";
+    -fx-font-size: 14px;
+    -fx-padding: 0;
+    -fx-accent: #4364D7;
 }
 
 .entry-label {
-    -fx-font-family: "Titillium Web SemiBold";
+    -fx-font-family: "Source Sans Pro SemiBold";
     -fx-font-size: 14px;
 }
 
@@ -39,7 +40,7 @@
     -fx-accent: #404978;
     -fx-background-color: transparent;
     -fx-border-color: transparent;
-    -fx-font-family: "Titillium Web";
+    -fx-font-family: "Source Sans Pro";
     -fx-font-size: 14px;
     -fx-padding: 0;
 }
@@ -49,7 +50,16 @@
 }
 
 #confirm-button {
-    -fx-background-color: #404978;
+    -fx-background-color: #DD3D3E;
+    -fx-text-fill: white;
+}
+
+#cancel-button {
+    -fx-text-fill: #DD3D3E;
+}
+
+#cancel-button:hover {
+    -fx-background-color: #DD3D3E;
     -fx-text-fill: white;
 }
 

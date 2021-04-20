@@ -44,6 +44,7 @@ public class AuthenticationService {
             logger.info("Authentication successful.");
             return true;
         } else {
+            logger.info("Authentication failed.");
             return false;
         }
     }

@@ -10,17 +10,17 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="500.0" maxWidth="502.0" minHeight="150.0" minWidth="306.0" prefHeight="240.0" prefWidth="350.0" style="-fx-background-color: transparent;" stylesheets="@delete_dashboard_entry.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.app.gui.controller.PopupDashboardDeleteController">
+<AnchorPane maxHeight="500.0" maxWidth="502.0" minHeight="150.0" minWidth="306.0" prefHeight="163.0" prefWidth="492.0" style="-fx-background-color: transparent;" stylesheets="@delete_dashboard_entry.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.app.gui.controller.PopupDashboardDeleteController">
    <children>
-      <Text id="title" layoutX="80.0" layoutY="37.0" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Soll dieser Eintrag wirklich gelöscht werden?" wrappingWidth="239.5999755859375" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="20.0" />
-      <Button id="confirm-button" fx:id="confirmButton" layoutX="90.0" layoutY="136.0" mnemonicParsing="false" text="Ja" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="55.0" />
-      <Button fx:id="declineButton" layoutX="209.0" layoutY="123.0" mnemonicParsing="false" text="Nein" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="55.0" />
-      <ImageView fitHeight="44.0" fitWidth="47.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+      <Text id="title" layoutX="80.0" layoutY="37.0" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Warnung" wrappingWidth="239.5999755859375" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0" />
+      <Button id="confirm-button" fx:id="confirmButton" layoutX="90.0" layoutY="136.0" mnemonicParsing="false" text="Löschen" AnchorPane.leftAnchor="207.0" AnchorPane.topAnchor="108.0" />
+      <Button id="cancel-button" fx:id="declineButton" layoutX="209.0" layoutY="123.0" mnemonicParsing="false" text="Abbrechen" AnchorPane.leftAnchor="82.0" AnchorPane.topAnchor="108.0" />
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="30.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="25.0">
          <image>
             <Image url="@../../icons/warning.png" />
          </image>
       </ImageView>
-      <GridPane layoutX="55.0" layoutY="86.0" prefHeight="68.0" prefWidth="220.0" vgap="8.0" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="86.0">
+      <GridPane layoutX="55.0" layoutY="86.0" mouseTransparent="true" opacity="0.0" prefHeight="68.0" prefWidth="220.0" vgap="8.0" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="86.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="115.0" minWidth="10.0" prefWidth="107.0" />
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="146.0" minWidth="10.0" prefWidth="133.0" />
@@ -39,5 +39,6 @@
             <TextField fx:id="displayWebsite" editable="false" styleClass="label-textfield" GridPane.columnIndex="1" GridPane.rowIndex="2" />
          </children>
       </GridPane>
+      <TextField editable="false" layoutX="87.0" layoutY="69.0" prefHeight="21.0" prefWidth="338.0" styleClass="selectable-label" text="Möchten Sie wirklich die ausgewählten Einträge löschen?" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="70.0" />
    </children>
 </AnchorPane>

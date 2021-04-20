@@ -13,22 +13,18 @@ import main.java.app.gui.event.SceneChangeEvent;
 @SuppressWarnings("UnstableApiUsage")
 public class MasterController extends Controller {
     private EventBus eventBus;
-    private Parent navigationBar;
 
     @FXML private BorderPane mainWindow;
     @FXML private AnchorPane sidebar;
 
     @Inject
-    public MasterController(EventBus eventBus, Parent navigationBar) {
+    public MasterController(EventBus eventBus) {
         this.eventBus = eventBus;
         this.eventBus.register(this);
-        this.navigationBar = navigationBar;
     }
 
     @FXML
-    private void initialize() {
-        mainWindow.setTop(navigationBar);
-    }
+    private void initialize() {}
 
     @Subscribe
     private void handleSceneChangeEvent(SceneChangeEvent event) {

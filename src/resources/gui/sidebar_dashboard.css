@@ -1,41 +1,47 @@
 @font-face {
-    src: url("fonts/TitilliumWeb-Regular.ttf");
+    src: url("fonts/SourceSansPro-Regular.ttf");
 }
 
 @font-face {
-    src: url("fonts/TitilliumWeb-SemiBold.ttf");
+    src: url("fonts/SourceSansPro-SemiBold.ttf");
 }
 
 .body {
-    -fx-background-color: #303030;
+    -fx-background-color: #4364D7;
 }
 
 .sidebar-header {
-    -fx-font-family: "Titillium Web SemiBold";
-    -fx-font-size: 26px;
-    -fx-fill: white;
+    -fx-font-family: "Source Sans Pro SemiBold";
+    -fx-font-size: 12px;
+    -fx-fill: #bbbbbb;
 }
 
 .sidebar-button {
     -fx-background-color: transparent;
+    -fx-background-size: 16px 16px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 12px 9px;
     -fx-border-color: transparent;
-    -fx-font-family: "Titillium Web";
-    -fx-font-size: 18px;
+    -fx-font-family: "Source Sans Pro SemiBold";
+    -fx-font-size: 14px;
     -fx-text-fill: white;
-    -fx-alignment: "CENTER_LEFT";
-    -fx-padding: 5px 0 5px 5px;
+    -fx-padding: 6px 0 6px 55px;
+}
+
+.sidebar-button-click-effect:hover {
+    -fx-background-color: #2848bd;
 }
 
 .sidebar-button-click-effect:pressed {
-    -fx-background-color: #202020;
+    -fx-background-color: #1b307e;
 }
 
 #add-entry-button {
-    -fx-graphic: url("../icons/sidebar_main_add_entry.png");
+    -fx-background-image: url("../icons/sidebar_main_add_entry.png");
 }
 
 #password-generator-button {
-    -fx-graphic: url("../icons/sidebar_main_password_generator.png");
+    -fx-background-image: url("../icons/sidebar_main_password_generator.png");
 }
 
 .search-button {

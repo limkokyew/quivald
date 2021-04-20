@@ -1,12 +1,14 @@
 .content-pane {
     -fx-alignment: center;
     -fx-background-color: white;
-    -fx-border-color: #9a9a9a;
     -fx-background-insets: 12;
+    -fx-border-color: #e0e0e0;
 }
 
 .close-button {
     -fx-background-color: transparent;
     -fx-border-color: transparent;
+    -fx-pref-height: 18px;
+    -fx-pref-width: 18px;
     -fx-graphic: url("../../icons/popup_close.png");
 }

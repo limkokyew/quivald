@@ -10,6 +10,9 @@ import main.java.app.gui.service.NavigationService;
 
 import java.util.logging.Logger;
 
+/**
+ * Deprecated - do not use
+ */
 public class NavigationController extends Controller {
     private AuthenticationService authService;
     private NavigationService navigationService;

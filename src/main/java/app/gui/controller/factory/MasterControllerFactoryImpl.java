@@ -14,7 +14,7 @@ public class MasterControllerFactoryImpl implements MasterControllerFactory {
     }
 
     @Override
-    public MasterController create(Parent navigationBar) {
-        return new MasterController(eventBus, navigationBar);
+    public MasterController create() {
+        return new MasterController(eventBus);
     }
 }

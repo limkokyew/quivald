@@ -26,6 +26,7 @@ public class PopupDashboardEntryController {
     @FXML private PasswordField passwordInput;
     @FXML private TextField websiteInput;
     @FXML private Button addButton;
+    @FXML private Button cancelButton;
 
     @Inject
     public PopupDashboardEntryController(
@@ -44,6 +45,7 @@ public class PopupDashboardEntryController {
     @FXML
     private void initialize() {
         addButton.setOnAction((event) -> add());
+        cancelButton.setOnAction((event) -> ((Stage) nameInput.getScene().getWindow()).close());
     }
 
     private void add() {
