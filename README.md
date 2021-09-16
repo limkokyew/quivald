@@ -1,6 +1,8 @@
-![dsi-forest](src/resources/graphics/login_window_picture.png)
+<p align="center">
+ <img src="src/resources/graphics/login_window_picture.png">
+</p>
 
-# QuiVald
+# 🔑 QuiVald
 In order to prevent security risks, it is advisable to not reuse the same
 password too often. But remembering dozens of passwords, some probably seldom
 used, is far too much trouble. With QuiVald, you can manage your passwords and
@@ -16,7 +18,7 @@ if you have JDK >= 11, you must download and install the JavaFX SDK to build
 QuiVald.
 
 The following dependencies are required to build QuiVald:
- - fasterxml.jackson.core
+ - ``fasterxml.jackson.core``
  - ``fasterxml.jackson.dataformat``
  - ``com.google.guava``
  - ``com.google.inject.guice``
@@ -24,7 +26,7 @@ The following dependencies are required to build QuiVald:
 Once you've installed all required dependencies, build a JAR from the source
 code. Then, run the JAR like so:
 
-```java
+```bash
 java -Dprism.lcdtext=false \
   --module-path "<path-to-javafx-lib>" \
   --add-modules javafx.base,javafx.controls,javafx.fxml \
